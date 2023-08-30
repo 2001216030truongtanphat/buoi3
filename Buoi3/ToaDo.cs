@@ -12,14 +12,14 @@ namespace Buoi3
         private int toadoY;
         private string tentoaDo;
 
-        public int ToaDoX { get{return toadoX;} set{toadoX = value;} }
-        public int ToaDoY { get{return toadoY;} set{toadoY = value;} }
+        public int ToaDoX { get { return toadoX; } set { toadoX = value; } }
+        public int ToaDoY { get { return toadoY; } set { toadoY = value; } }
         public string TenToaDo { get { return tentoaDo; } set { tentoaDo = value; } }
         public ToaDo()
         {
-            toadoX = 0;
-            toadoY = 0;
-            tentoaDo = "O";
+            toadoX = 1;
+            toadoY = 1;
+            tentoaDo = "Toa do base";
         }
         public ToaDo(int tx, int ty, string tentd)
         {
@@ -29,7 +29,7 @@ namespace Buoi3
         }
         public override string ToString()
         {
-            return "ToaDo: " + tentoaDo + "(" + toadoX + " ," + toadoY + ")";
+            return "ToaDo: " + tentoaDo + "(" + toadoX + "," + toadoY + ")";
         }
     }
 }
